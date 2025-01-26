@@ -1,0 +1,58 @@
+/* StackOverflow.css */
+
+.container {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "Jersey 15", serif;
+  background-image: linear-gradient(red, blue);
+  color: transparent;
+  background-clip: text;
+}
+.stackImg {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+}
+.text {
+  font-size: 1rem;
+  color: #cccccc;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.highlight {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.link {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #63a4ff;
+}
+
+.icon {
+  margin-right: 5px;
+  vertical-align: middle;
+  color: #f48024; /* StackOverflow orange */
+}
+
+.icon:hover {
+  color: #ff9900;
+}

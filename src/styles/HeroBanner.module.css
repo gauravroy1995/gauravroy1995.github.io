@@ -1,0 +1,114 @@
+/* Base Hero Banner Styles */
+.heroBanner {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 20px; /* Add spacing between elements */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  /* flex-grow: 1; */
+}
+
+/* Trigger the Hero Banner Slide-in */
+.slideIn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Logo Responsiveness */
+.logo {
+  display: flex;
+  flex: auto;
+  height: auto;
+  width: clamp(120px, 20vw, 300px);
+  object-fit: contain;
+
+  will-change: filter;
+  transition: filter 300ms;
+  max-height: 50vh;
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+/* Hover Effects */
+.logo:hover {
+  filter: drop-shadow(0 0 5em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Text Styling */
+.introText {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+
+  text-align: left; /* Center align text */
+}
+
+.introText:nth-child(1) {
+  animation-delay: 1s; /* Delay the animation */
+}
+.introText:nth-child(2) {
+  animation-delay: 1.3s; /* Delay the animation */
+}
+.introText:nth-child(3) {
+  animation-delay: 1.6s; /* Delay the animation */
+}
+
+.basicInfoText {
+  font-size: 1em;
+  font-weight: 300;
+  font-family: "Courier New", Courier, monospace;
+  padding-right: 20px;
+
+  /* width: 20%; */
+  text-align: left;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 1.8s;
+}
+
+/* Keyframes for Fade and Slide-Up Effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 1.9s;
+  gap: 20px;
+}
+
+.buttonWraps {
+  margin-top: 20px;
+}
+/* .buttonWraps:nth-child(2) {
+  margin-left: 20px;
+} */
