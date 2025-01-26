@@ -16,12 +16,17 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v3
+        with:
+          node-version: 18 # Replace with your local Node.js version
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm ci
 
       - name: Build project
-        run: npm run build
+        run: CI=false npm run build
+
+      - name: Verify Build Output
+        run: ls -la ./dist
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
