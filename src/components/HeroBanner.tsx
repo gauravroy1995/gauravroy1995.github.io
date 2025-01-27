@@ -54,7 +54,7 @@ export const HeroBanner = () => {
             flex: 0.5,
           }}
         >
-          <span className={`jersey15Font ${styles.introText}`}>Reacts</span>
+          <span className={`jersey15Font ${styles.introText}`}>React</span>
           <span className={`jersey15Font ${styles.introText}`}>
             React Native
           </span>
