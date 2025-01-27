@@ -1,7 +1,11 @@
-import React from "react";
 import "./hover.css";
 
-export const HoverGradientButton = (props) => {
+type P = {
+  text: string;
+  onClick: () => void;
+};
+
+export const HoverGradientButton = (props: P) => {
   const text = props.text || "HOVER ME, THEN CLICK ME!";
   const onClick = props.onClick || (() => {});
 
