@@ -19,10 +19,11 @@
   background-clip: text;
 }
 .stackImg {
-  width: 100%;
+  width: 50vw;
   height: auto;
-  max-height: 200px;
+
   object-fit: contain;
+  align-self: flex-start;
 }
 .text {
   font-size: 1rem;
@@ -31,7 +32,7 @@
 }
 
 .highlight {
-  text-decoration: underline;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   color: #ffffff;
 }

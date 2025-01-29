@@ -9,26 +9,32 @@
   transition: opacity 1s ease-out, transform 1s ease-out;
   display: flex;
   align-items: center;
+  flex: 0.5;
   /* flex-wrap: wrap; */
   gap: 20px; /* Add spacing between elements */
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
 
   /* flex-grow: 1; */
 }
+.mainBann {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-/* Trigger the Hero Banner Slide-in */
-.slideIn {
-  opacity: 1;
-  transform: translateX(0);
+.topMain {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 /* Logo Responsiveness */
 .logo {
   display: flex;
-  flex: auto;
+
   height: auto;
+  flex-wrap: wrap;
   width: clamp(120px, 20vw, 300px);
   object-fit: contain;
 
@@ -37,6 +43,15 @@
   max-height: 50vh;
   max-width: 350px;
   border-radius: 10px;
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateX(200%);
+}
+
+/* Trigger the Hero Banner Slide-in */
+.slideIn {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Hover Effects */

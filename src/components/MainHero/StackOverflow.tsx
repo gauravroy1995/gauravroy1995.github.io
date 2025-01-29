@@ -15,16 +15,18 @@ export const StackOverflow = () => {
         <span className="highlight">around 12k</span>, which I believe is
         hard-earned.
       </p>
-      <span className="text">You can check my profile here: </span>
+      <span className="text">
+        You can check my profile here:{" "}
+        <a
+          href="https://stackoverflow.com/users/11355303/gaurav-roy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link"
+        >
+          My StackOverflow Profile
+        </a>{" "}
+      </span>
 
-      <a
-        href="https://stackoverflow.com/users/11355303/gaurav-roy"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="link"
-      >
-        My StackOverflow Profile
-      </a>
       <p className="text">
         Also, you can't contribute to Open Source unless you've actually
         deep-dived and worked on it.

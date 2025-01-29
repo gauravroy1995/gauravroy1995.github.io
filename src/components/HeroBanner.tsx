@@ -42,48 +42,56 @@ export const HeroBanner = () => {
     "https://drive.google.com/file/d/1zbs9BucuaU0Xxknizrs02oqo83SFQgUg/view?usp=sharing";
 
   return (
-    <div>
-      <section
-        ref={bannerRef}
-        className={`${styles.heroBanner} ${isVisible ? styles.slideIn : ""}`}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            flex: 0.5,
-          }}
+    <div className={styles.topMain}>
+      <div ref={bannerRef} className={styles.mainBann}>
+        <section
+          className={`${styles.heroBanner} ${isVisible ? styles.slideIn : ""}`}
         >
-          <span className={`jersey15Font ${styles.introText}`}>React</span>
-          <span className={`jersey15Font ${styles.introText}`}>
-            React Native
-          </span>
-          <span className={`jersey15Font ${styles.introText}`}>Arsenal ❤️</span>
-          <span className={styles.basicInfoText}>
-            Hey there! Gaurav roy here, ive worked on multiple startups, product
-            based companies as both web developer and mobile app developer
-          </span>
-          <section className={styles.buttonRow}>
-            <div className={styles.buttonWraps}>
-              <HoverGradientButton
-                onClick={() => {
-                  scrollToSection();
-                }}
-                text="My tech stack"
-              />
-            </div>
-            <div className={styles.buttonWraps}>
-              <HoverGradientButton
-                onClick={() => {
-                  window.open(url, "_blank");
-                }}
-                text="My resume"
-              />
-            </div>
-          </section>
-        </div>
-        <img src={myImg} className={styles.logo} alt="Vite logo" />
-      </section>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              flex: 0.5,
+            }}
+          >
+            <span className={`jersey15Font ${styles.introText}`}>React</span>
+            <span className={`jersey15Font ${styles.introText}`}>
+              React Native
+            </span>
+            <span className={`jersey15Font ${styles.introText}`}>
+              Arsenal ❤️
+            </span>
+            <span className={styles.basicInfoText}>
+              Hey there! Gaurav roy here, ive worked on multiple startups,
+              product based companies as both web developer and mobile app
+              developer
+            </span>
+            <section className={styles.buttonRow}>
+              <div className={styles.buttonWraps}>
+                <HoverGradientButton
+                  onClick={() => {
+                    scrollToSection();
+                  }}
+                  text="My tech stack"
+                />
+              </div>
+              <div className={styles.buttonWraps}>
+                <HoverGradientButton
+                  onClick={() => {
+                    window.open(url, "_blank");
+                  }}
+                  text="My resume"
+                />
+              </div>
+            </section>
+          </div>
+        </section>
+        <img
+          src={myImg}
+          className={`${styles.logo} ${isVisible ? styles.slideIn : ""}`}
+          alt="Vite logo"
+        />
+      </div>
       <StackOverflow />
     </div>
   );
