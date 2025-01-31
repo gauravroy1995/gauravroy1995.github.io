@@ -9,7 +9,7 @@
   transition: opacity 1s ease-out, transform 1s ease-out;
   display: flex;
   align-items: center;
-  flex: 0.5;
+  flex: 1;
   /* flex-wrap: wrap; */
   gap: 20px; /* Add spacing between elements */
 
@@ -19,8 +19,9 @@
   display: flex;
   flex: 1;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .topMain {

@@ -51,7 +51,7 @@ export const HeroBanner = () => {
             style={{
               display: "flex",
               flexDirection: "column",
-              flex: 0.5,
+              flex: 1,
             }}
           >
             <span className={`jersey15Font ${styles.introText}`}>React</span>
@@ -86,11 +86,11 @@ export const HeroBanner = () => {
             </section>
           </div>
         </section>
-        <img
+        {/* <img
           src={myImg}
           className={`${styles.logo} ${isVisible ? styles.slideIn : ""}`}
           alt="Vite logo"
-        />
+        /> */}
       </div>
       <StackOverflow />
     </div>
