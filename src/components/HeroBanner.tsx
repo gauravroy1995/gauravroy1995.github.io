@@ -3,6 +3,7 @@ import myImg from "../assets/myimg.jpeg";
 import styles from "../styles/HeroBanner.module.css";
 import { HoverGradientButton } from "./global/HoverGradientButton/hoverGradientButton";
 import { StackOverflow } from "./MainHero/StackOverflow";
+import { BottomLinks } from "./global/BottomLinks/BottomLinks";
 
 export const HeroBanner = () => {
   const bannerRef = useRef(null);
@@ -61,10 +62,11 @@ export const HeroBanner = () => {
             <span className={`jersey15Font ${styles.introText}`}>
               Arsenal ❤️
             </span>
+            <span className={styles.basicInfoText}>Hey there!</span>
+            <span className={styles.basicInfoText1}>i'm Gaurav roy</span>
             <span className={styles.basicInfoText}>
-              Hey there! Gaurav roy here, ive worked on multiple startups,
-              product based companies as both web developer and mobile app
-              developer
+              ive worked on multiple startups, product based companies as both
+              web developer and mobile app developer
             </span>
             <section className={styles.buttonRow}>
               <div className={styles.buttonWraps}>
@@ -93,6 +95,7 @@ export const HeroBanner = () => {
         /> */}
       </div>
       <StackOverflow />
+      <BottomLinks />
     </div>
   );
 };

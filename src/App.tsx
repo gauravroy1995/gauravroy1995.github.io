@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="logosMain">
       <HeroBanner />
-      <Tool />
+      {/* <Tool /> */}
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import "./StackOverflow.css";
 import Stack from "../../assets/stack.png";
+import { HoverText } from "../global/Hover/HoverText";
 
 export const StackOverflow = () => {
   return (
@@ -17,14 +18,16 @@ export const StackOverflow = () => {
       </p>
       <span className="text">
         You can check my profile here:{" "}
-        <a
-          href="https://stackoverflow.com/users/11355303/gaurav-roy"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link"
-        >
-          My StackOverflow Profile
-        </a>{" "}
+        <HoverText
+          text="My StackOverflow Profile"
+          onClick={() => {
+            window.open(
+              "https://stackoverflow.com/users/11355303/gaurav-roy",
+              "_blank"
+            );
+          }}
+          addClasses="link"
+        />
       </span>
 
       <p className="text">
